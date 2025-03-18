@@ -11,7 +11,7 @@ Babyfoot est une application permettant de gérer des tournois de babyfoot de ma
 
   
 
-1. Clonez le dépôt :
+1. Cloner le dépôt :
 
 ```sh
 
@@ -23,7 +23,7 @@ cd babyfoot
 
   
 
-2. Lancez l'environnement avec Docker Compose :
+2. Lancer l'environnement avec Docker Compose :
 
 ```sh
 
@@ -35,7 +35,7 @@ docker compose up -d
 
   
 
-3. Lancer le script pour ajouter un utilisateur de base:
+3. Attendre que l'api soit disponible et lancer le script pour ajouter un utilisateur de base:
 
 ```sh
 
