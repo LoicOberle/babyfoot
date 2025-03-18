@@ -35,7 +35,7 @@ docker compose up -d
 
   
 
-3. Lancer le script pour ajouter un utilisateur de base :
+3. Lancer le script pour ajouter un utilisateur de base:
 
 ```sh
 
@@ -45,7 +45,9 @@ cd api
 
 ```
 
-  
+Identifiant: admin@example.com
+Mot de passe: admin
+
 
 ## Accès aux services
 
