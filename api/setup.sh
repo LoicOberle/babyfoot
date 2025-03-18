@@ -1,1 +1,1 @@
-curl -X POST http://api:3000/auth/register -H "Content-Type: application/json" -d '{"name": "admin", "email": "admin@example.com", "password": "admin"}'
+curl -X POST http://localhost:3000/auth/register -H "Content-Type: application/json" -d '{"name": "admin", "email": "admin@example.com", "password": "admin"}'
