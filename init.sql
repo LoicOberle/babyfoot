@@ -1,3 +1,3 @@
-ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'rootpassword';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+ALTER USER 'babyfoot'@'%' IDENTIFIED WITH mysql_native_password BY 'babyfoot';
+GRANT ALL PRIVILEGES ON *.* TO 'babyfoot'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
