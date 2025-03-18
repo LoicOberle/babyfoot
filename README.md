@@ -31,6 +31,9 @@ docker compose build
 
 docker compose up -d
 
+docker exec -i babyfoot-db-1 mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'rootpassword' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+
+
 ```
 
   
