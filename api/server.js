@@ -66,8 +66,8 @@ async function testConnection() {
   } catch (error) {
         //ensure you created the database 
         //check database credentials
-        console.error('Impossible de se connecter à la base de données, nouvelle tentative dans une seconde', error);
-        await new Promise(res => setTimeout(res, 1000));
+        console.error('Impossible de se connecter à la base de données, nouvelle tentative dans 5 secondes', error);
+        await new Promise(res => setTimeout(res, 5000));
         testConnection()
      }
   }
