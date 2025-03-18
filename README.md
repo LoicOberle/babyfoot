@@ -12,6 +12,7 @@ Babyfoot est une application permettant de gérer des tournois de babyfoot de ma
 
 2. Lancez l'environnement avec Docker Compose :
    ```sh
+   docker compose build
    docker compose up -d
    ```
 
