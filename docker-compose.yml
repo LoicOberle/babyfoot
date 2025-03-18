@@ -1,0 +1,40 @@
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile_api
+    command: npm run dev
+    volumes:
+      - ./api:/usr/app/
+     # - /usr/app/node_modules  # Avoid overriding node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_HOST=db
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=rootpassword
+      - DATABASE_NAME=babyfoot
+    restart: always
+    networks:
+      - app-network
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: babyfoot
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database:/var/lib/mysql
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
